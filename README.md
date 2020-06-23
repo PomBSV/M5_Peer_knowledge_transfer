@@ -1,18 +1,23 @@
 
 # **Case study** 
 Architecture of a new financial perspectives model
+
 Author : Maya Polanco
+
 Date: 29.06.2020 
  
 ## Objective:
-Create a new architecture for the activities related to calculate the financial calculations of the supplementary benefits insurance.
+Create a new architecture for the activities relating the financial calculations of the supplementary benefits insurance.
  
 ## Initial situation
--        Calculations are done in a two steps basis. An R package has been created. This package contains 12 modules which allows us to prepare an excel file with the outputs.
--        9 out of 12 modules contain functions, which has been created exclusively for this package. Packages as: XLConnect, RDCOMClient, are used to 
--        The output for the excel sheet where the outputs are pasted is prepared with a format managed by hand.
--        The basis for the projections are the population and disable population scenarios.
--        A mode with statistical data is not yet implemented. Even though, analysis out of the package, are done in an annual basis using package ‘forecast’ in R.
+
+![Image of EL fin-process](https://octodex.github.com/images/yaktocat.png)
+
+-    Calculations are done in a two steps basis. An R package has been created. This package contains 12 modules which allows us to prepare an excel file with the outputs.
+-    9 out of 12 modules contain functions, which has been created exclusively for this package. Packages as: XLConnect, RDCOMClient, are used to 
+-    The output for the excel sheet where the outputs are pasted is prepared with a format managed by hand.
+-    The basis for the projections are the population and disable population scenarios.
+-    A mode with statistical data is not yet implemented. Even though, analysis out of the package, are done in an annual basis using package ‘forecast’ in R.
 -         
  
 ### Some facts :
