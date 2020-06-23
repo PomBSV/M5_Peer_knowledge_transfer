@@ -1,12 +1,46 @@
+
+# **Case study** 
+Architecture of a new financial perspectives model
+Author : Maya Polanco
+Date: 29.06.2020 
+ 
+## Objective:
+Create a new architecture for the activities related to calculate the financial calculations of the supplementary benefits insurance.
+ 
+## Initial situation
+-        Calculations are done in a two steps basis. An R package has been created. This package contains 12 modules which allows us to prepare an excel file with the outputs.
+-        9 out of 12 modules contain functions, which has been created exclusively for this package. Packages as: XLConnect, RDCOMClient, are used to 
+-        The output for the excel sheet where the outputs are pasted is prepared with a format managed by hand.
+-        The basis for the projections are the population and disable population scenarios.
+-        A mode with statistical data is not yet implemented. Even though, analysis out of the package, are done in an annual basis using package ‘forecast’ in R.
+-         
+ 
+### Some facts :
+-	12 Module package in R. 3 modules 
+Module input_el : copy from the excel worksheet the inputs for the model
+Module comp_el : all the computations are done in this module
+Module makeout_el : this module copy all the results in the worksheet.
+
+9 modules contain functions to execute operations.
+-	Packages which are used are not supported any more : RDCOMClient, …
+-	Operational time of 1 execution changes between 4 and 6 minutes per exécution.
+o	Budget production : each year new statistics are injected in the model from the year before. The data which is used for control or for keeping the data basis are kept separately.
+
+bas.xlsx
+
+
+o	Control of budget in a quarterly basis. Nowadays, a parallele structure has been created to control the Budget. This structure is feeded with data at the end of mars of each year
+
+Solutions
+-
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/PomBSV/exam/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
