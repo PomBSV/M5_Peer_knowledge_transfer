@@ -12,7 +12,8 @@ Create a new architecture for the activities relating the financial calculations
 ## Initial situation
 
 ![Image of EL fin-process](https://github.com/PomBSV/exam/images/SB_process.png?raw=true)
-[](images/SB_process.png?raw=true)
+
+[image](images/SB_process.png?raw=true)
 -    Calculations are done in a two steps basis. An R package has been created. This package contains 12 modules which allows us to prepare an excel file with the outputs.
 -    9 out of 12 modules contain functions, which has been created exclusively for this package. Packages as: XLConnect, RDCOMClient, are used to 
 -    The output for the excel sheet where the outputs are pasted is prepared with a format managed by hand.
