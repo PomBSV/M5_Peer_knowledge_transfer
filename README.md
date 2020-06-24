@@ -47,7 +47,8 @@ Module makeout_el : this module copy all the results in the worksheet.
 Another structure is used, from where in 2nd. quarter a forecast is handled. This structure has been created separated from the package. Inputs come in part from the base_el.xlsx file and ouputs have no relation with the ones used in the package.
 
 ```markdown
-## Initial contributions
--
+**Initial contributions**
+- A quick and temporal solution is needed with respect to functions which depends on packages that are not more supported. 
+`code`
 
 ```
