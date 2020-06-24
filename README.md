@@ -35,11 +35,15 @@ Module makeout_el : this module copy all the results in the worksheet.
 - Output file of the package where projections for the years from actual year until year + 65 are automatically pasted.  , these come from the worksheet output of the projections (package R).
 - The objective of this worksheet is to make accessible many inputs which could be used during the year to produce other models.
 - One worksheet is produced for each package execution. Format of each sheet in the utput worksheet has to be prepared manually.
+- A worksheet is produced 4 times a year or depending on the number of economic scenarios.
 
 ### base_el.xlsx file :
 - File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R).
 - The objective of this worksheet is to keep a record that is easily accessible. THis worksheet is updated at least four times a year.
 - One file is mantained during the years. 
+
+Another structure is used, from where in 2nd. quarter a forecast is handled. This structure has been created separated from the package. Inputs come in part from the base_el.xlsx file and ouputs have no relation with the ones used in the package.
+
 
 
 ```markdown
