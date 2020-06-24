@@ -27,7 +27,8 @@ Module input_el : copy from the excel worksheet the inputs for the model
 Module comp_el : all the computations are done in this module
 Module makeout_el : this module copy all the results in the worksheet.
 
--	Packages which are used are not supported any more : RDCOMClient, …
+-	Packages which are used are not supported any more : RDCOMClient.
+- Function created to read and write in the package
 -	Operational time for 1 execution changes between 4 and 6 minutes per execution.
 
 ### FH_EL.xlsx file :
@@ -40,9 +41,6 @@ Module makeout_el : this module copy all the results in the worksheet.
 - The objective of this worksheet is to keep a record that is easily accessible. THis worksheet is updated at least four times a year.
 - One file is mantained during the years. 
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/PomBSV/exam/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 ```markdown
 Syntax highlighted code block
@@ -71,3 +69,6 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Welcome to GitHub Pages
+
+You can use the [editor on GitHub](https://github.com/PomBSV/exam/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
