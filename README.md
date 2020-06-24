@@ -19,7 +19,7 @@ Develop an alternative architecture for the activities relating the financial ca
 -    The output for the excel sheet where the outputs are pasted is prepared with a format managed by hand.
 -    The basis for the projections are the population and disable population scenarios.
 -    A mode with statistical data is not yet implemented. However, analysis in a structure different of the this package, are done in an annual basis using package ‘forecast’ in R.
--         
+-    In a yearly basis, each second quarter, an analysis using the projections on t and the projections of the year before are done. 
  
 ### Package massmod_el :
 -	12 Module package in R, ccnsisting on 3 modules where the architecture for the projections is managed, and 9 modules which contain functions to execute operations exclusively for this package.
@@ -36,6 +36,7 @@ Module makeout_el : this module copy all the results in the worksheet.
 - The objective of this worksheet is to make accessible many inputs which could be used during the year to produce other models.
 - One worksheet is produced for each package execution. Format of each sheet in the utput worksheet has to be prepared manually.
 - A worksheet is produced 4 times a year or depending on the number of economic scenarios.
+- The second quarter analysis between the projections t and t-1 is carried out on a sheet of this file.
 
 ### base_el.xlsx file :
 - File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R).
@@ -45,11 +46,8 @@ Module makeout_el : this module copy all the results in the worksheet.
 
 Another structure is used, from where in 2nd. quarter a forecast is handled. This structure has been created separated from the package. Inputs come in part from the base_el.xlsx file and ouputs have no relation with the ones used in the package.
 
-
-
 ```markdown
-Syntax highlighted code block
-**Bold** and _Italic_ and `Code` text
+## Initial contributions
+-
 
-[Link](url) and ![Image](src)
 ```
