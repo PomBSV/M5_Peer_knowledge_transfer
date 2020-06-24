@@ -1,13 +1,13 @@
 
 # **Case study** 
-Architecture of a new financial perspectives model
+Architecture of the activities related to financial assessement and projectios of the SB insurance
 
 Author : Maya Polanco
 
 Date: 29.06.2020 
  
 ## Objective:
-Create a new architecture for the activities relating the financial calculations of the supplementary benefits insurance.
+Develope an alternative architecture for the activities relating the financial calculations of the supplementary benefits insurance.
  
 ## Initial situation
 
