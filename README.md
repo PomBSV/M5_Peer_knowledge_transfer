@@ -35,11 +35,6 @@ o	Budget production : each year new statistics are injected in the model from th
 bas.xlsx
 
 
-o	Control of budget in a quarterly basis. Nowadays, a parallele structure has been created to control the Budget. This structure is feeded with data at the end of mars of each year
-
-Solutions
--
-
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/PomBSV/exam/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
