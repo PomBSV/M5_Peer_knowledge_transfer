@@ -1,6 +1,6 @@
 
 ## Case study 
-# Architecture of the activities related to financial assessement and projectios of the SB insurance
+# Architecture of activities related to financial assessement and projectios of the SB insurance
 
 **Author** : Maya Polanco
 
