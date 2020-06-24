@@ -1,7 +1,6 @@
 
 ## Case study 
 # Architecture of activities related to financial assessement and projectios of the SB insurance
-Some Markdown text with <span style="color:blue">some *blue* text</span>.
 
 
 **Author** : Maya Polanco
@@ -66,6 +65,13 @@ openxlsx::writeData(wb,ws,data_to_paste, startRow = nb_row, startCol = nb_col)
 - Modularisation per types of outputs. Original package has just 3 calculation modules, the 9 other modules are functions. The 3 big modules contain code that could be separeted in different modules which could make the program more flexible, when errors appear.
 - Modularisation in the same package of activities related to data recording and 
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 
 Last updated Jun 24, 2020 <span style="color:red">red</span>
