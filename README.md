@@ -31,20 +31,18 @@ Module makeout_el : this module copy all the results in the worksheet.
 -	Operational time for 1 execution changes between 4 and 6 minutes per execution.
 
 ### FH_EL.xlsx file :
-- File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R).
-- The objective of this worksheet is to keep a record that is easily accessible.
+- Output file of the package where projections for the years from actual year until year + 65 are automatically pasted.  , these come from the worksheet output of the projections (package R).
+- The objective of this worksheet is to make accessible many inputs which could be used during the year to produce other models.
+- One worksheet is produced for each package execution. Format of each sheet in the utput worksheet has to be prepared manually.
 
 ### base_el.xlsx file :
 - File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R).
 - The objective of this worksheet is to keep a record that is easily accessible. THis worksheet is updated at least four times a year.
+- One file is mantained during the years. 
 
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/PomBSV/exam/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-
 
 ```markdown
 Syntax highlighted code block
