@@ -1,10 +1,10 @@
 
-# **Case study** 
-Architecture of the activities related to financial assessement and projectios of the SB insurance
+## Case study 
+# Architecture of the activities related to financial assessement and projectios of the SB insurance
 
-Author : Maya Polanco
+**Author** : Maya Polanco
 
-Date: 29.06.2020 
+**Date**: 29.06.2020 
  
 ## Objective:
 Develope an alternative architecture for the activities relating the financial calculations of the supplementary benefits insurance.
@@ -14,6 +14,7 @@ Develope an alternative architecture for the activities relating the financial c
 ![Image of EL fin-process](images/SB_process.png?raw=true)
 
 
+-    Budget production : each year new statistics are injected in the model from the year before. The data which is used for assessement or for keeping the data basis are kept separately.
 -    Calculations are done in a two steps basis. An R package has been created. This package contains 12 modules which allows us to prepare an excel file with the outputs.
 -    9 out of 12 modules contain functions, which has been created exclusively for this package. Packages as: XLConnect, RDCOMClient, are used to 
 -    The output for the excel sheet where the outputs are pasted is prepared with a format managed by hand.
@@ -21,16 +22,14 @@ Develope an alternative architecture for the activities relating the financial c
 -    A mode with statistical data is not yet implemented. Even though, analysis out of the package, are done in an annual basis using package ‘forecast’ in R.
 -         
  
-### Some facts :
--	12 Module package in R. 3 modules 
+### Package massmod_el :
+-	12 Module package in R, ccnsisting on 3 modules where the architecture for the projections is managed, and 9 modules which contain functions to execute operations exclusively for this package.
 Module input_el : copy from the excel worksheet the inputs for the model
 Module comp_el : all the computations are done in this module
 Module makeout_el : this module copy all the results in the worksheet.
 
-9 modules contain functions to execute operations.
 -	Packages which are used are not supported any more : RDCOMClient, …
 -	Operational time of 1 execution changes between 4 and 6 minutes per exécution.
-o	Budget production : each year new statistics are injected in the model from the year before. The data which is used for control or for keeping the data basis are kept separately.
 
 bas.xlsx
 
