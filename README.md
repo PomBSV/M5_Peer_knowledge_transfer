@@ -2,6 +2,8 @@
 ## Case study 
 # Architecture of activities related to financial assessement and projectios of the SB insurance
 Some Markdown text with <span style="color:blue">some *blue* text</span>.
+
+
 **Author** : Maya Polanco
 
 **Date**: 29.06.2020 
