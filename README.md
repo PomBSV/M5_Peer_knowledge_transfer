@@ -40,6 +40,7 @@ Module makeout_el : this module copy all the results in the worksheet.
 ### base_el.xlsx file :
 - File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R).
 - The objective of this worksheet is to keep a record that is easily accessible. THis worksheet is updated at least four times a year.
+- In the second quater, graphics representing the forecasts and the statistics are included and the links have to be updated each year by hand.
 - One file is mantained during the years. 
 
 Another structure is used, from where in 2nd. quarter a forecast is handled. This structure has been created separated from the package. Inputs come in part from the base_el.xlsx file and ouputs have no relation with the ones used in the package.
@@ -48,31 +49,7 @@ Another structure is used, from where in 2nd. quarter a forecast is handled. Thi
 
 ```markdown
 Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PomBSV/exam/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/PomBSV/exam/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
