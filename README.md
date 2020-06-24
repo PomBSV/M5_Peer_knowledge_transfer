@@ -16,10 +16,9 @@ Develope an alternative architecture for the activities relating the financial c
 
 -    Budget production : each year new statistics are injected in the model from the year before. The data which is used for assessement or for keeping the data basis are kept separately.
 -    Calculations are done in a two steps basis. An R package has been created. This package contains 12 modules which allows us to prepare an excel file with the outputs.
--    9 out of 12 modules contain functions, which has been created exclusively for this package. Packages as: XLConnect, RDCOMClient, are used to 
 -    The output for the excel sheet where the outputs are pasted is prepared with a format managed by hand.
 -    The basis for the projections are the population and disable population scenarios.
--    A mode with statistical data is not yet implemented. Even though, analysis out of the package, are done in an annual basis using package ‘forecast’ in R.
+-    A mode with statistical data is not yet implemented. However, analysis in a structure different of the this package, are done in an annual basis using package ‘forecast’ in R.
 -         
  
 ### Package massmod_el :
@@ -29,10 +28,10 @@ Module comp_el : all the computations are done in this module
 Module makeout_el : this module copy all the results in the worksheet.
 
 -	Packages which are used are not supported any more : RDCOMClient, …
--	Operational time of 1 execution changes between 4 and 6 minutes per exécution.
+-	Operational time for 1 execution changes between 4 and 6 minutes per execution.
 
-bas.xlsx
-
+### base_el file :
+- File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R)
 
 ## Welcome to GitHub Pages
 
