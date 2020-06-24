@@ -46,9 +46,18 @@ Module makeout_el : this module copy all the results in the worksheet.
 
 Another structure is used, from where in 2nd. quarter a forecast is handled. This structure has been created separated from the package. Inputs come in part from the base_el.xlsx file and ouputs have no relation with the ones used in the package.
 
-```markdown
+
 **Initial contributions**
-- A quick and temporal solution is needed with respect to functions which depends on packages that are not more supported. 
-`code`
+- A quick and temporal solution is needed with respect to functions which depends on packages that are not more supported. Some functions from the package as
+
+`openxlsx::writeData` still there is the problem of convertimg the actual ranges in the original function which are described by a letter and a number for example as B12 or C13:D15
+```markdown
+Output <- SpreadsheetWriteW(M, name, RANGE, SHEET)
+
+```
+The functions from openxlsx packeage perfomr well and are well supported. An idea would be create a function to convert all these range based format to the one that the writeData funtion from openxlsx package use
+
+```markdown
+openxlsx::writeData(wb,ws,data_to_paste, startRow = nb_row, startCol = nb_col)
 
 ```
