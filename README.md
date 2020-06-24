@@ -7,7 +7,7 @@
 **Date**: 29.06.2020 
  
 ## Objective:
-Develope an alternative architecture for the activities relating the financial calculations of the supplementary benefits insurance.
+Develop an alternative architecture for the activities relating the financial calculations of the supplementary benefits insurance.
  
 ## Initial situation
 
@@ -30,8 +30,13 @@ Module makeout_el : this module copy all the results in the worksheet.
 -	Packages which are used are not supported any more : RDCOMClient, …
 -	Operational time for 1 execution changes between 4 and 6 minutes per execution.
 
-### base_el file :
-- File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R)
+### FH_EL.xlsx file :
+- File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R).
+- The objective of this worksheet is to keep a record that is easily accessible.
+
+### base_el.xlsx file :
+- File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R).
+- The objective of this worksheet is to keep a record that is easily accessible. THis worksheet is updated at least four times a year.
 
 ## Welcome to GitHub Pages
 
