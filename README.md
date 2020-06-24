@@ -69,5 +69,3 @@ openxlsx::writeData(wb,ws,data_to_paste, startRow = nb_row, startCol = nb_col)
 ```diff
 # Last updated Jun 24, 2020 
 ```
-
-<p style='color:red'>This is some red text.</p>
