@@ -8,19 +8,19 @@
 **Date**: 29.06.2020 
  
 ## Objective:
-Develop an alternative architecture for the activities relating the financial calculations of the supplementary benefits insurance.
+Develop an alternative architecture for the activities related to the financial calculations of the supplementary benefits insurance.
  
 ## Initial situation
 
 ![Image of EL fin-process](images/SB_process.png?raw=true)
 
 
--    Budget production : each year new statistics are injected in the model from the year before. The data which is used for assessement or for keeping the data basis are kept separately.
--    Calculations are done in a two steps basis. An R package has been created. This package contains 12 modules which allows us to prepare an excel file with the outputs.
--    The output for the excel sheet where the outputs are pasted is prepared with a format managed by hand.
+-    Budget production: each year, new statistics are entered in the model from the year before. The data which is used for assessement or for keeping the data basis are kept separately.
+-    An R package has been created. This package contains 12 modules which allows us to prepare an output in format .xlsx.
+-    Format of the output-worksheet (lines, spaces, etc) is made manually.
 -    The basis for the projections are the population and disable population scenarios.
--    A mode with statistical data is not yet implemented. However, analysis in a structure different of the this package, are done in an annual basis using package ‘forecast’ in R.
--    In a yearly basis, each second quarter, an analysis using the projections on t and the projections of the year before are done. 
+-    A model with statistical data is not yet implemented in this package. However, a forecat-analysis is carried-out in a different structure (R). This forecast-analysis is carried-out in a yearly basis using R package ‘forecast’.
+-    Each second quarter, an analysis using the projections on t and the projections of t-1 (year before) are done. This analysis is performed to control changes in the  projections as a consequence of changes in macroeconomic parameters. When a change in projections is observed, a mutation-entry is made in the accounting system (SAP).
  
 ### Package massmod_el :
 -	12 Module package in R, ccnsisting on 3 modules where the architecture for the projections is managed, and 9 modules which contain functions to execute operations exclusively for this package.
