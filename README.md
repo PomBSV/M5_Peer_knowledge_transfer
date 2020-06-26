@@ -67,7 +67,7 @@ openxlsx::writeData(wb,ws,data_to_paste, startRow = nb_row, startCol = nb_col)
 
 ## Proposed flow
 
-![Image of EL fin-process](images/SB_process_2.png?raw=true)
+![Image of EL fin-process](images/SB_process_22.png?raw=true)
 
 
 ```diff
