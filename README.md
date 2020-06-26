@@ -23,13 +23,13 @@ Develop an alternative architecture for the activities related to the financial 
 -    Each second quarter, an analysis using the projections on t and the projections of t-1 (year before) are done. This analysis is performed to control changes in the  projections as a consequence of changes in macroeconomic parameters. When a change in projections is observed, a mutation-entry is made in the accounting system (SAP).
  
 ### Package massmod_el :
--	12 Module package in R, ccnsisting on 3 modules where the architecture for the projections is managed, and 9 modules which contain functions to execute operations exclusively for this package.
+-	12 Module package in R, consisting of 3 modules where the projections calculations are managed, and 9 modules which contain functions to execute operations exclusively for this package.
 Module input_el : copy from the excel worksheet the inputs for the model
 Module comp_el : all the computations are done in this module
 Module makeout_el : this module copy all the results in the worksheet.
 
--	Packages which are used are not supported any more : RDCOMClient.
-- Function created to read and write in the package
+-	Packages that are used are no longer supported: RDCOMClient.
+- Function created to read and write in the package take too long.
 -	Operational time for 1 execution changes between 4 and 6 minutes per execution.
 
 ### FH_EL.xlsx file :
@@ -67,5 +67,5 @@ openxlsx::writeData(wb,ws,data_to_paste, startRow = nb_row, startCol = nb_col)
 
 
 ```diff
-# Last updated Jun 24, 2020 
+# Last updated Jun 26, 2020 
 ```
