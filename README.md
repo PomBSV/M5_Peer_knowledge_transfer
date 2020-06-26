@@ -1,5 +1,6 @@
 
-## Case study 
+# M5 Peer Knowledge Transfer
+## Case study
 # Architecture of activities related to financial assessement and projections of the SB insurance
 
 
