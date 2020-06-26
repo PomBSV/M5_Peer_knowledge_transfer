@@ -33,15 +33,15 @@ Module makeout_el : this module copy all the results in the worksheet.
 -	Operational time for 1 execution changes between 4 and 6 minutes per execution.
 
 ### FH_EL.xlsx file :
-- Output file of the package where projections for the years from actual year until year + 65 are automatically pasted.  , these come from the worksheet output of the projections (package R).
+- Output file of the package where projections for future years (from actual year until year + 65) are automatically pasted.  
 - The objective of this worksheet is to make accessible many inputs which could be used during the year to produce other models.
-- One worksheet is produced for each package execution. Format of each sheet in the utput worksheet has to be prepared manually.
+- One worksheet is produced for each package execution. The format of each sheet in the output worksheet has to be prepared manually.
 - A worksheet is produced 4 times a year or depending on the number of economic scenarios.
 - The second quarter analysis between the projections t and t-1 is carried out on a sheet of this file.
 
 ### base_el.xlsx file :
-- File where projections for the years from actual year until year + 4 are copied by hand , these come from the worksheet output of the projections (package R).
-- The objective of this worksheet is to keep a record that is easily accessible. THis worksheet is updated at least four times a year.
+- File where projections for the years from actual year until year + 4 are copied by hand, these come from the worksheet output of the projections (package R).
+- The objective of this worksheet is to keep a record that is easily accessible. This worksheet is updated at least four times a year.
 - In the second quater, graphics representing the forecasts and the statistics are included and the links have to be updated each year by hand.
 - One file is mantained during the years. 
 
@@ -49,14 +49,14 @@ Another structure is used, from where in 2nd. quarter a forecast is handled. Thi
 
 
 ## Initial contributions
-- A quick and temporal solution is needed with respect to functions which depends on packages that are not more supported. Some functions from the package as
+- A quick and temporal solution is needed with respect to functions which depend on packages that are no longer supported. Some functions from the package as
 
-`openxlsx::writeData` still there is the problem of convertimg the actual ranges in the original function which are described by a letter and a number for example as B12 or C13:D15
+`openxlsx::writeData` still there is the problem of convert the actual ranges in the original function which are described by a letter and a number for example as B12 or C13:D15
 ```markdown
 SpreadsheetWriteW(M, name, RANGE, SHEET)
 
 ```
-The functions from openxlsx packeage perfomr well and are well supported. An idea would be create a function to convert all these range based format to the one that the writeData funtion from openxlsx package use
+The functions from openxlsx package perform well and are well supported. An idea would be create a function to convert all these range based format to the one that the writeData funtion from openxlsx package use
 
 ```markdown
 openxlsx::writeData(wb,ws,data_to_paste, startRow = nb_row, startCol = nb_col)
