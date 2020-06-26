@@ -65,6 +65,10 @@ openxlsx::writeData(wb,ws,data_to_paste, startRow = nb_row, startCol = nb_col)
 - Modularisation per types of outputs. Original package has just 3 calculation modules, the 9 other modules are functions. The 3 big modules contain code that could be separeted in different modules which could make the program more flexible, when errors appear.
 - Modularisation in the same package of activities related to data recording and 
 
+## Proposed flow
+
+![Image of EL fin-process](images/SB_process_2.png?raw=true)
+
 
 ```diff
 # Last updated Jun 26, 2020 
