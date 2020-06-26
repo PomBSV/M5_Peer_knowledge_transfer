@@ -21,7 +21,9 @@ Develop an alternative architecture for the activities related to the financial 
 -    The basis for the projections are the population and disable population scenarios.
 -    A model with statistical data is not yet implemented in this package. However, a forecat-analysis is carried-out in a different structure (R). This forecast-analysis is carried-out in a yearly basis using R package ‘forecast’.
 -    Each second quarter, an analysis using the projections on t and the projections of t-1 (year before) are done. This analysis is performed to control changes in the  projections as a consequence of changes in macroeconomic parameters. When a change in projections is observed, a mutation-entry is made in the accounting system (SAP).
- 
+-    Another package (delfin) exists to handle projections in the other insurances. Some input data used for different process for the SB insurance come from the same source (FSO) but not from the same general basis existing already for the package delfin. There are different entries of the same data, from the same sources but for different purposes. 
+-    Double registration and data entry as : population data, macroeconomic values (wage and price indexes). This data is already existing in a well-managed register of the package delfin. 
+
 ### Package massmod_el :
 -	12 Module package in R, consisting of 3 modules where the projections calculations are managed, and 9 modules which contain functions to execute operations exclusively for this package.
 Module input_el : copy from the excel worksheet the inputs for the model
@@ -63,7 +65,8 @@ openxlsx::writeData(wb,ws,data_to_paste, startRow = nb_row, startCol = nb_col)
 
 ```
 - Modularisation per types of outputs. Original package has just 3 calculation modules, the 9 other modules are functions. The 3 big modules contain code that could be separeted in different modules which could make the program more flexible, when errors appear.
-- Modularisation in the same package of activities related to data recording and 
+- Modularisation in the same package of the data recording.
+- Use of input data from package delfin (population).
 
 ## Proposed flow
 
